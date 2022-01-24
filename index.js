@@ -50,7 +50,9 @@ zomato.use("/orders", Orders);
 zomato.use("/reviews", Reviews);
 zomato.use("/user", User);
 
-zomato.listen(4000,()=>{
+const PORT = process.env.PORT || 4000;
+
+zomato.listen(PORT,()=>{
     ConnectDB().then(()=>{
         console.log("Server is running!!!");
     }).catch((error)=>{
