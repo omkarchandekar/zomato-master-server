@@ -1,5 +1,5 @@
 // const UserModel = require("./database/users");
-import { FoodModel, ImageModel, MenuModel, OrderModel, RestaurantModel, ReviewModel, UserModel } from "./src/database/allModels";
+import { FoodModel, ImageModel, MenuModel, OrderModel, RestaurantModel, ReviewModel, UserModel } from "./database/allModels";
 
 require("@babel/core").transform("code", {
     presets: ["@babel/preset-env"],
@@ -11,23 +11,23 @@ import helmet from "helmet";
 import passport from "passport";
 
 //Database Connection
-import ConnectDB from "./src/database/connection";
+import ConnectDB from "./database/connection";
 
 // import google authentication config
-import googleAuthConfig from './src/config/google.config';
+import googleAuthConfig from './config/google.config';
 
 // Private route authentication config
-import privateRouteConfig from "./src/config/route.config"
+import privateRouteConfig from "./config/route.config"
 
 // API
-import Auth from "./src/API/Auth";
-import Restaurants from "./src/API/Restaurants";
-import Food from "./src/API/Food";
-import Menu from "./src/API/Menu";
-import Image from "./src/API/Image";
-import Orders from "./src/API/Orders";
-import Reviews from "./src/API/Reviews";
-import User from "./src/API/User";
+import Auth from "./API/Auth";
+import Restaurants from "./API/Restaurants";
+import Food from "./API/Food";
+import Menu from "./API/Menu";
+import Image from "./API/Image";
+import Orders from "./API/Orders";
+import Reviews from "./API/Reviews";
+import User from "./API/User";
 
 
 // passport configuration
